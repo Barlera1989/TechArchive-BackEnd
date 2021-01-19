@@ -16,13 +16,14 @@ def test_get_all_news_return_information():
 def test_post_news():    
     post_url = base_url+'1/create'
     data = {
-        "title": "Livro",
+        "title": "Livro saddassdkj",
         "subtitle": "Author",
-        "content": "Long",
+        "content": "Long sjdasddajskjnckn",
         "upvotes": 1,
         "downvotes": 1,
         "create_at": "10/10/2010",
-        "approved": True}
+        "approved": True
+        }
     answer = requests.post(post_url,json=data,headers=headers)
     assert answer.status_code == 200 
         
